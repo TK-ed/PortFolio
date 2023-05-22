@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Todo-List",
+    "image": "next.png",
+    "description": "Creative Todo List using Next.js",
+    "tags": ["Next.js", "TailwindCSS", "TypseScript", "DaisyUI"],
+    "source_code": "https://github.com/TK-ed/todo_next"
+  },
+  {
+    "id": 2,
+    "name": "Guess-What",
+    "image": "GuessWhat.png",
+    "description": "A Fun and Simple Guessing Game",
+    "tags": ["HTML", "CSS", "ES6"],
+    "source_code": "https://github.com/TK-ed/Guess-What",
+    "demo": "https://guesswhamt.netlify.app/"
+  },
+  {
+    "id": 3,
+    "name": "dE-Vote",
+    "image": "evote.png",
+    "description": "A decentralized voting platform!!",
+    "tags": ["React", "Express.js", "Truffle", "MongoDB", "Node.js", "Solidity"],
+    "source_code": "https://github.com/drkostas/yaml-config-wrapper"
+  },
+  {
+    "id": 4,
+    "name": "Login/Sign-up",
+    "image": "https://imgur.com/4LumI32.png",
+    "description": "An application with a Basic Login/Sign-up Full Stack",
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
+    "source_code": "https://github.com/TK-ed/Social-Media-Backend/tree/master/Server/controllers/auth"
+  },
+  {
+    "id": 5,
+    "name": "jeSUS",
+    "image": "bot.png",
+    "description": "A clever and entertaining bot",
+    "tags": ["JavaScript", "ES6", "Discord.js", "OpenAI"],
+    "source_code": "https://github.com/TK-ed/jeSUS",
+    "demo": "https://discord.com/channels/@Tharun#7991"
+  },
+  {
+    "id": 6,
+    "name": "Portfolio",
+    "image": "portfolio.png",
+    "description": "Simple Portfolio using React.js",
+    "tags": ["React", "CSS3", "HTML5", "ES6"],
+    "source_code": "https://github.com/TK-ed/PortFolio2.0",
+    "demo": "https://tk-ed.vercel.app"
+  },
+  {
+    "id": 7,
+    "name": "CRUD-Backend",
+    "image": "LoginBackend.png",
+    "description": "CRUD operations utilising Node.js and Express",
+    "tags": ["Node.js", "Express.js"],
+    "source_code": "https://github.com/TK-ed/CRUD-backend"
+  }
+]
