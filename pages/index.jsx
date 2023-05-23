@@ -19,12 +19,9 @@ export default function HomePage() {
               <Type />
             </h3>
 
-
-            {/* <div className={styles.bio} style={{ padding: 50, textAlign: "left" }}>
-              <h6>
+              {/* <h3 className={styles.bio} style={{ padding: 50, textAlign: "left" }}>
                 <Type />
-              </h6>
-            </div> */}
+              </h3> */}
 
             {/* <div className={styles.cardContainer}>
               <div className={styles.card}>
