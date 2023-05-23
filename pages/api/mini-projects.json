@@ -20,9 +20,9 @@
     "id": 3,
     "name": "dE-Vote",
     "image": "evote.png",
-    "description": "A decentralized voting platform!!",
+    "description": "A Blockchain-based decentralised voting system built on Ethereum!!",
     "tags": ["React", "Express.js", "Truffle", "MongoDB", "Node.js", "Solidity"],
-    "source_code": "https://github.com/drkostas/yaml-config-wrapper"
+    "source_code": "https://github.com/TK-ed/de-Vote"
   },
   {
     "id": 4,
