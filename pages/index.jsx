@@ -2,6 +2,7 @@ import Link from 'next/link';
 // import Illustration from '../components/Illustration';
 import Image from "next/image";
 import styles from '../styles/HomePage.module.css';
+import Type from '../pages/Type'
 
 export default function HomePage() {
   return (
@@ -14,7 +15,16 @@ export default function HomePage() {
         <div className={styles.foreground}>
           <div className={styles.content}>
             <h1 className={styles.name}>Tharun Kumar</h1>
-            <h6 className={styles.bio}>Developer</h6>
+            <h3>
+              <Type />
+            </h3>
+
+
+            {/* <div className={styles.bio} style={{ padding: 50, textAlign: "left" }}>
+              <h6>
+                <Type />
+              </h6>
+            </div> */}
 
             {/* <div className={styles.cardContainer}>
               <div className={styles.card}>
@@ -58,6 +68,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div> */}
+            <br />
             <Link href="/about">
               <button className={styles.button}>About Me</button>
             </Link>

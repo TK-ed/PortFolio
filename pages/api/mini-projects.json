@@ -30,7 +30,7 @@
     "image": "https://imgur.com/4LumI32.png",
     "description": "An application with a Basic Login/Sign-up Full Stack",
     "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
-    "source_code": "https://github.com/TK-ed/Social-Media-Backend/tree/master/Server/controllers/auth"
+    "source_code": "https://github.com/TK-ed/Login-MERN"
   },
   {
     "id": 5,
@@ -55,7 +55,7 @@
     "name": "CRUD-Backend",
     "image": "LoginBackend.png",
     "description": "CRUD operations utilising Node.js and Express",
-    "tags": ["Node.js", "Express.js"],
+    "tags": ["Node.js", "Express.js", "MongoDB"],
     "source_code": "https://github.com/TK-ed/CRUD-backend"
   }
 ]
