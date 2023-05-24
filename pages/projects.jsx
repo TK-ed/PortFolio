@@ -12,6 +12,7 @@ const ProjectsPage = ({ pypi_projects }) => {
 
       <br/>
       <center><h4>Full-stack Login page</h4></center>
+      <br/>
       <hr/>
       <div className={styles.container}>
         {pypi_projects.map((project) => (
