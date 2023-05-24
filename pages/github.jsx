@@ -25,16 +25,22 @@ const GithubPage = ({ repos, user }) => {
   const fetchGithub = async() => {
     let result = [
       totalRepos = 0,
-      totalStars = 0
+      totalStars = 0,
+      // totalCommits = 0
     ]
 
     console.log('Fetching Github Stats');
 
-    let { data } = await octokit.request(
-      `GET /users/${NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=300`
-    );
+    // let { data } = await octokit.request(
+    //   `GET /users/${NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=300`
+    // );
     let repos = data;
     result.totalRepos += repos.length;
+
+
+
+
+
 
     console.log(repos);
     console.log('Github Stats fetched successfully');
@@ -60,6 +66,9 @@ const GithubPage = ({ repos, user }) => {
           <div>
             <h3>{user.followers} followers</h3>
           </div>
+          {/* <div>
+            <h3>{user.commits} commits</h3>
+          </div> */}
         </div>
       </a>
       {/* <div> <center><h1>Still workin' on <IoIosCodeWorking size={28}/></h1></center></div> */}
@@ -93,6 +102,7 @@ const GithubPage = ({ repos, user }) => {
 };
 
 export async function getStaticProps() {
+
   const auth = process.env.NEXT_PUBLIC_GITHUB_API
   const userRes = await fetch(
     `https://api.github.com/users/TK-ed`,
@@ -112,6 +122,20 @@ export async function getStaticProps() {
       },
     }
   );
+
+
+  const octokit = new Octokit({
+    auth: auth
+  })
+
+  // let commits = await octokit.request('GET /repos/TK-ed/{repo}/commits', {
+  //   owner: 'TK-ed',
+  //   repo: 'REPO',
+  //   headers: {
+  //     'X-GitHub-Api-Version': '2022-11-28'
+  //   }
+  // })
+
   let repos = await repoRes.json();
   console.log(repos);
   repos = repos

@@ -37,7 +37,7 @@
     "name": "LeetcodeAPI",
     "image": "leetcode.png",
     "description": "A straightforward API that returns the number of issues solved in Leetcode.",
-    "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
+    "tags": ["Express.js", "Node.js", "Cyclic"],
     "source_code": "https://github.com/TK-ed/LeetcodeAPI",
     "demo": "https://tk-ed.cyclic.app"
   },
