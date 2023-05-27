@@ -14,7 +14,7 @@ const Bottombar = () => {
     <footer className={styles.bottomBar}>
       <div className={styles.container}>
         <a
-          href="https://github.com/TK-ed"
+          href="https://github.com/TK-ed/PortFolio"
           target="_blank"
           rel="noreferrer noopener"
           className={styles.section}
