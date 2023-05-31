@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 // import Illustration from '../components/Illustration';
 import Image from "next/image";
-import styles from '../styles/HomePage.module.css';
-import Type from '../pages/Type'
+import styles from "../styles/HomePage.module.css";
+import Type from "../pages/Type";
 
 export default function HomePage() {
   return (
@@ -19,7 +19,7 @@ export default function HomePage() {
               <Type />
             </h3>
 
-              {/* <h3 className={styles.bio} style={{ padding: 50, textAlign: "left" }}>
+            {/* <h3 className={styles.bio} style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </h3> */}
 
@@ -76,7 +76,9 @@ export default function HomePage() {
               <button className={styles.outlined}>Contact</button>
             </Link>
           </div>
-          <h4 className={{textAlign: 'bottom'}}>"There is something mysterious about the life of a developer."</h4>
+          <h4 className={{ textAlign: "bottom" }}>
+            "There is something mysterious about the life of a developer."
+          </h4>
           {/* <Illustration className={styles.illustration} /> */}
           {/* <div className={styles.right}>
             <div className={styles.picture_boader}>
@@ -98,6 +100,6 @@ export default function HomePage() {
 
 export async function getStaticProps() {
   return {
-    props: { title: 'Home' },
+    props: { title: "Home" },
   };
 }
