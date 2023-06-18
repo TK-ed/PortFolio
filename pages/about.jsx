@@ -6,8 +6,8 @@ import { SiExpress, SiMysql,SiMongodb, SiSolidity,SiTailwindcss, SiDaisyui } fro
 import {IoLogoNodejs} from 'react-icons/io'
 const myResume = './TK-ed.pdf';
 
-
 const AboutPage = () => {
+
   return (
     <>
       <h3>About Me</h3><br/>
@@ -31,14 +31,14 @@ const AboutPage = () => {
       <br />
       <h3>Back-end Technologies:</h3><br />
       <ul>
-        <li><span><SiMysql /> </span>MySQL</li>
-        <li><span><SiMongodb /> </span>MongoDB</li>
-        <li><span><SiExpress /> </span>Express.js</li>
+      <li><span><SiExpress /> </span>Express.js</li>
         <li><span><IoLogoNodejs /> </span>Node.js</li>
+        <li><span><SiMongodb /> </span>MongoDB</li>
+        <li><span><SiMysql /> </span>MySQL</li>
         <li><span><SiSolidity /> </span>Solidity</li>
       </ul>
       <br/>
-      
+    
       <center>
         <h3>Resume (<a href={myResume} download="Resume-TK-ed.pdf">Download</a>)</h3>
         <br />
