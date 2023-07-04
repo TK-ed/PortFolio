@@ -19,17 +19,27 @@ const ContactPage = () => {
         console.log(error.text);
     });
     e.target.reset();
+    toast("Sent successfully!!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    })
   };
-  const notify = () => toast("Sent successfully!!", {
-    position: "bottom-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-  });
+  // const notify = () => toast("Sent successfully!!", {
+  //   position: "bottom-right",
+  //   autoClose: 5000,
+  //   hideProgressBar: false,
+  //   closeOnClick: true,
+  //   pauseOnHover: true,
+  //   draggable: true,
+  //   progress: undefined,
+  //   theme: "dark",
+  // });
 
   return (
     <div className={styles.container}>
@@ -86,7 +96,7 @@ const ContactPage = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" onClick={notify}>Submit</button>
+          <button type="submit">Submit</button>
           <ToastContainer
             position="bottom-right"
             autoClose={5000}
