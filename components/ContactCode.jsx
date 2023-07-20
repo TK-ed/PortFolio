@@ -36,23 +36,23 @@ const contactItems = [
 const Certifications = [
   {
     platform: 'Udemy',
-    title: 'SQL/PostgreSQL Bootcamp',
-    href: 'https://drive.google.com/file/d/1A_Emscd1nFExCwnC7_B_efgRB748oV_-/view?usp=sharing'
+    title: 'The Complete React.js course',
+    href: 'https://drive.google.com/file/d/1vS14ddnENri7Z8CCybDJ4wb0CCIq93fh/view?usp=sharing'
   },
   {
     platform: 'Udemy',
-    title: 'Learn Java Programming',
-    href: 'https://drive.google.com/file/d/1nm3QZbEXF96GF15YntfLEpWdif6Nc0S3/view?usp=sharing'
-  },
-  {
-    platform: 'Hackerrank',
-    title: 'CSS Basics',
-    href: 'https://drive.google.com/file/d/1AwRg64krQEyIc8_nzTRSELZsSs8zttDk/view?usp=sharing'
+    title: 'CSS And JavaScript Complete Course',
+    href: 'https://drive.google.com/file/d/1kLofqJKsLzjQD8YkuVf56g3qts7GzOzE/view?usp=sharing'
   },
   {
     platform: 'Udemy',
     title: 'Master Python',
     href: 'https://drive.google.com/file/d/1xj6fbDm8sGqkJqpyZROxrEStAKIArHWH/view?usp=sharing'
+  },
+  {
+    platform: 'Udemy',
+    title: 'SQL/PostgreSQL Bootcamp',
+    href: 'https://drive.google.com/file/d/1A_Emscd1nFExCwnC7_B_efgRB748oV_-/view?usp=sharing'
   },
 ]
 

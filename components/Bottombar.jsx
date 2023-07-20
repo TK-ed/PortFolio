@@ -46,12 +46,8 @@ const Bottombar = () => {
             <p>Github</p>
           </div>
         </a>
-        <a
-          href="https://discord.com/invite/Tharun#7991"
-          target="_blank"
-          rel="noopener"
-        >
-          <div className={styles.section}>
+        <a href="https://discord.com/invite/Tharun#7991" target="_blank" rel="noopener">
+            <div className={styles.section}>
             <BsDiscord className={styles.icon} />
             <p>Discord</p>
           </div>
@@ -62,10 +58,12 @@ const Bottombar = () => {
             <p>Powered by Next.js</p>
           </div>
         </a>
-        <div className={styles.section}>
+        <a href="https://prettier.io/" target="_blank" rel="noopener">
+          <div className={styles.section}>
           <CheckIcon className={styles.icon} />
           <p>Prettier</p>
         </div>
+        </a>
         <div className={styles.section}>
           <BellIcon />
         </div>
