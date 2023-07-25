@@ -2,7 +2,7 @@ import { pdfjs, Document, Page, PDFDownloadLink } from 'react-pdf'
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
-import { SiExpress, SiMysql,SiMongodb, SiSolidity,SiTailwindcss, SiDaisyui } from 'react-icons/si'
+import { SiExpress, SiFlask,SiMongodb, SiFastapi,SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 import {IoLogoNodejs} from 'react-icons/io'
 const myResume = './TK-ed.pdf';
 
@@ -25,8 +25,8 @@ const AboutPage = () => {
         <li><span><AiFillHtml5 /> </span>HTML</li>
         <li><span><FaCss3Alt /> </span>CSS</li>
         <li><span><FaReact /> </span>React.js</li>
+        <li><span><SiNextdotjs /> </span>Next.js</li>
         <li><span><SiTailwindcss /> </span>TailwindCSS</li>
-        <li><span><SiDaisyui /> </span>DaisyUI</li>
       </ul>
       <br />
       <h3>Back-end Technologies:</h3><br />
@@ -34,8 +34,8 @@ const AboutPage = () => {
       <li><span><SiExpress /> </span>Express.js</li>
         <li><span><IoLogoNodejs /> </span>Node.js</li>
         <li><span><SiMongodb /> </span>MongoDB</li>
-        <li><span><SiMysql /> </span>MySQL</li>
-        <li><span><SiSolidity /> </span>Solidity</li>
+        <li><span><SiFastapi /> </span>FastAPI</li>
+        <li><span><SiFlask /> </span>Flask</li>
       </ul>
       <br/>
     
