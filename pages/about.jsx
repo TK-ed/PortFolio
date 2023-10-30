@@ -2,7 +2,7 @@ import { pdfjs, Document, Page, PDFDownloadLink } from 'react-pdf'
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
-import { SiExpress, SiFlask,SiMongodb, SiFastapi,SiTailwindcss, SiNextdotjs, SiGraphql, SiTypescript } from 'react-icons/si'
+import { SiExpress, SiLinux, SiMongodb, SiFastapi, SiTailwindcss, SiNextdotjs} from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { GrArchlinux } from 'react-icons/gr'
 const myResume = './TK-ed.pdf';
@@ -36,7 +36,7 @@ const AboutPage = () => {
         <li><span><IoLogoNodejs /> </span>Node.js</li>
         <li><span><SiMongodb /> </span>MongoDB</li>
         <li><span><SiFastapi /> </span>FastAPI</li>
-        <li><span><SiFlask /> </span>Flask</li>
+        <li><span><SiLinux /> </span>Linux</li>
       </ul>
       <br/>
     
