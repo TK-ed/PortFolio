@@ -16,7 +16,7 @@ const AboutPage = () => {
         <li><span role="img" aria-label="book">📖</span> I am Tharun Kumar, a Pre-Final year devoted student with aspirations of becoming a prosperous developer.</li>
         <li><span role="img" aria-label="graduate-hat">🎓</span> A dedicated backend developer that is also skilled in creating the user interface for web applications.</li>
         <li><span role="img" aria-label="light-bulb">💡</span> An avid user of the Blockchain technology and an excellent team player with attention to detail. </li>
-        <li><span role="img" aria-label="laptop">💻</span> Currently working on GraphQL <span><SiGraphql /></span> and Linux!! <span><GrArchlinux/></span> </li>
+        <li><span role="img" aria-label="laptop">💻</span> Currently working on FastAPI <span><SiFastapi /></span> and Linux!! <span><GrArchlinux/></span> </li>
       </ul>
       <br/>
 
