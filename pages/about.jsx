@@ -19,7 +19,7 @@ const AboutPage = () => {
         <li><span role="img" aria-label="laptop">💻</span> Currently working on FastAPI <span><SiFastapi /></span> and Linux!! <span><GrArchlinux/></span> </li>
       </ul>
       <br/>
-
+      
       <h2>Relevant skills:</h2><br/>
       <h3>Front-end Technologies:</h3><br />
       <ul>
@@ -39,7 +39,14 @@ const AboutPage = () => {
         <li><span><SiLinux /> </span>Linux</li>
       </ul>
       <br/>
-    
+        {/* <h3>Front-end Technologies:</h3><br />
+          <ul>
+            <li><span><AiFillHtml5 /> </span>HTML</li>
+            <li><span><FaCss3Alt /> </span>CSS</li>
+            <li><span><FaReact /> </span>React.js</li>
+            <li><span><SiNextdotjs /> </span>Next.js</li>
+            <li><span><SiTailwindcss /> </span>TailwindCSS</li>
+          </ul> */}
       <center>
         <h3>Resume (<a href={myResume} download="Resume-TK-ed.pdf">Download</a>)</h3>
         <br />

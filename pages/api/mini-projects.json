@@ -1,23 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Todo-List",
-    "image": "next.png",
-    "description": "Creative Todo List using Next.js",
-    "tags": ["Next.js", "TailwindCSS", "TypseScript", "DaisyUI"],
-    "source_code": "https://github.com/TK-ed/todo_next"
-  },
-  {
-    "id": 2,
-    "name": "Guess-What",
-    "image": "GuessWhat.png",
-    "description": "A Fun and Simple Guessing Game",
-    "tags": ["HTML", "CSS", "ES6"],
-    "source_code": "https://github.com/TK-ed/Guess-What",
-    "demo": "https://guesswhamt.netlify.app/"
-  },
-  {
-    "id": 3,
     "name": "dE-Vote",
     "image": "evote.png",
     "description": "A Blockchain-based decentralised voting system built on Ethereum!!",
@@ -25,21 +8,38 @@
     "source_code": "https://github.com/TK-ed/de-Vote"
   },
   {
+    "id": 2,
+    "name": "Github-scraping",
+    "image": "scraping.png",
+    "description": "A backend service which scrapes the github details of the given user.",
+    "tags": ["FastAPI", "python", "BeautifulSoup4", "Cyclic"],
+    "source_code": "https://github.com/TK-ed/github-scrape",
+    "demo": "https://tk-ed.cyclic.app"
+  },
+  {
+    "id": 3,
+    "name": "Guess-What",
+    "image": "GuessWhat.png",
+    "description": "A Fun and Simple Guessing Game",
+    "tags": ["HTML", "CSS", "ES6", "JavaScript"],
+    "source_code": "https://github.com/TK-ed/Guess-What",
+    "demo": "https://guesswhamt.netlify.app/"
+  },
+  {
     "id": 4,
-    "name": "Login/Sign-up",
-    "image": "https://imgur.com/4LumI32.png",
-    "description": "An application with a Basic Login/Sign-up Full Stack",
-    "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
-    "source_code": "https://github.com/TK-ed/Login-MERN"
+    "name": "Comment Analysis",
+    "image": "comment_analysis.png",
+    "description": "An application which analyzes the emotion of the given comment",
+    "tags": ["FastAPI", "TypseScript", "React", "Node.js"],
+    "source_code": "https://github.com/TK-ed/comment-analysis-react"
   },
   {
     "id": 5,
-    "name": "LeetcodeAPI",
-    "image": "leetcode.png",
-    "description": "A straightforward API that returns the number of issues solved in Leetcode.",
-    "tags": ["Express.js", "Node.js", "Cyclic"],
-    "source_code": "https://github.com/TK-ed/LeetcodeAPI",
-    "demo": "https://tk-ed.cyclic.app"
+    "name": "Todo-List",
+    "image": "next.png",
+    "description": "Creative Todo List using Next.js",
+    "tags": ["Next.js", "TailwindCSS", "TypseScript", "DaisyUI"],
+    "source_code": "https://github.com/TK-ed/todo_next"
   },
   {
     "id": 6,
@@ -52,19 +52,19 @@
   },
   {
     "id": 7,
-    "name": "CRUD-Backend",
-    "image": "LoginBackend.png",
-    "description": "CRUD operations utilising Node.js and Express.js",
-    "tags": ["Node.js", "Express.js", "MongoDB"],
-    "source_code": "https://github.com/TK-ed/CRUD-backend"
-  },
-  {
-    "id": 8,
     "name": "jeSUS",
     "image": "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg",
     "description": "A clever and entertaining bot",
     "tags": ["JavaScript", "ES6", "Discord.js", "OpenAI"],
     "source_code": "https://github.com/TK-ed/jeSUS",
     "demo": "https://discord.com/channels/@Tharun#7991"
+  },
+  {
+    "id": 8,
+    "name": "FastAPI-CRUD",
+    "image": "LoginBackend.png",
+    "description": "CRUD operations utilising FastAPI, Python and PostgreSQL",
+    "tags": ["FastAPI", "python", "PostgreSQL", "SqlAlchemy"],
+    "source_code": "https://github.com/TK-ed/fastapi-postgres"
   }
 ]
