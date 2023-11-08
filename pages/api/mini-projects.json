@@ -43,12 +43,11 @@
   },
   {
     "id": 6,
-    "name": "Portfolio",
+    "name": "Doctor Appointment System",
     "image": "portfolio.png",
-    "description": "Simple Portfolio using React.js",
-    "tags": ["React", "CSS3", "HTML5", "ES6"],
-    "source_code": "https://github.com/TK-ed/PortFolio2.0",
-    "demo": "https://justtk11.vercel.app"
+    "description": "Project which was portrayed for Smart India Hackathon - 2023",
+    "tags": ["Node.js", "Express.js", "Bcrypt", "MongoDB"],
+    "source_code": "https://github.com/TK-ed/sih-23-backend"
   },
   {
     "id": 7,
