@@ -11,7 +11,7 @@ const ProjectsPage = ({ pypi_projects }) => {
       <h3>My recent works!! {process.env.NEXT_PUBLIC_GITHUB_API_KEY} </h3>
 
       <br/>
-      <center><h4>Leetcode Scraping</h4></center>
+      <center><h4>Landing Page!!</h4></center>
       <br/>
       <hr/>
       <div className={styles.container}>
