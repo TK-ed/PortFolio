@@ -2,7 +2,7 @@ import { pdfjs, Document, Page, PDFDownloadLink } from 'react-pdf'
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
-import { SiExpress, SiPostgresql, SiMongodb, SiFastapi, SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si'
+import { SiExpress, SiMongodb, SiFastapi, SiTailwindcss, SiNextdotjs, SiTypescript, SiJavascript, SiDocker } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { GrArchlinux } from 'react-icons/gr'
 const myResume = './TK-ed.pdf';
@@ -24,8 +24,8 @@ const AboutPage = () => {
       <ul>
         <li><span><AiFillHtml5 /></span>HTML</li>
         <li><span><FaCss3Alt /> </span>CSS</li>
-        <li><span><FaReact /> / <SiNextdotjs /> </span>React.js/Next.js</li>
-        <li><span><SiTypescript /></span> TypeScript</li>
+        <li><span><FaReact />/<SiNextdotjs /> </span>React.js/Next.js</li>
+        <li><span><SiTypescript />/<SiJavascript /></span> TypeScript/JavaScript</li>
         <li><span><SiTailwindcss /> </span>TailwindCSS</li>
       </ul>
       <br />
@@ -35,7 +35,7 @@ const AboutPage = () => {
         <li><span><SiExpress /> </span>Express.js</li>
         <li><span><IoLogoNodejs /> </span>Node.js</li>
         <li><span><SiMongodb /> </span>MongoDB</li>
-        <li><span><SiPostgresql /> </span>PostgreSQL</li>
+        <li><span><SiDocker /> </span>Docker</li>
       </ul>
       <br/>
         {/* <h3>Front-end Technologies:</h3><br />

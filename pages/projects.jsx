@@ -3,15 +3,13 @@ import {getProjects} from './api/mini-projects';
 import styles from '../styles/ProjectsPage.module.css';
 
 const ProjectsPage = ({ pypi_projects }) => {
-
-  // const API = process.env.NEXT_PUBLIC_GITHUB_API
-  // console.log(API);
+  
   return (
     <>
       <h3>My recent works!! {process.env.NEXT_PUBLIC_GITHUB_API_KEY} </h3>
 
       <br/>
-      <center><h4>Landing Page!!</h4></center>
+      <center><h4>Sync.Sphere!!</h4></center>
       <br/>
       <hr/>
       <div className={styles.container}>

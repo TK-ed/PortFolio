@@ -4,7 +4,14 @@
     "name": "dE-Vote",
     "image": "evote.png",
     "description": "A Blockchain-based decentralised voting system built on Ethereum!!",
-    "tags": ["React", "Express.js", "Truffle", "MongoDB", "Node.js", "Solidity"],
+    "tags": [
+      "React",
+      "Express.js",
+      "Truffle",
+      "MongoDB",
+      "Node.js",
+      "Solidity"
+    ],
     "source_code": "https://github.com/TK-ed/de-Vote"
   },
   {
@@ -18,12 +25,12 @@
   },
   {
     "id": 3,
-    "name": "Guess-What",
-    "image": "GuessWhat.png",
-    "description": "A Fun and Simple Guessing Game made using HTML, CSS and Javascript (ES6).",
-    "tags": ["HTML", "CSS", "ES6", "JavaScript"],
-    "source_code": "https://github.com/TK-ed/Guess-What",
-    "demo": "https://guesswhamt.netlify.app/"
+    "name": "Sync.Sphere",
+    "image": "next-sync.png",
+    "description": "It offers a seamlessly integrated platform, leveraging Supabase for cloud-based file storage.",
+    "tags": ["Next.js", "TailwindCSS", "TypseScript", "Shadcn/UI", "Supabase"],
+    "source_code": "https://github.com/TK-ed/sync-sphere",
+    "demo": "https://next-sync.vercel.app/"
   },
   {
     "id": 4,
@@ -60,11 +67,11 @@
   },
   {
     "id": 8,
-    "name": "Zephyr",
-    "image": "zephyr.png",
-    "description": "Elevated user experience and incorporated robust server-side authentication through Next.js.",
-    "tags": ["Next.js", "TailwindCSS", "TypseScript", "JavaScript", "MongoDB", "DaisyUI"],
-    "source_code": "https://github.com/TK-ed/next-landing-task",
-    "demo": "https://next-page-task.vercel.app/"
+    "name": "Guess-What",
+    "image": "GuessWhat.png",
+    "description": "A Fun and Simple Guessing Game made using HTML, CSS and Javascript (ES6).",
+    "tags": ["HTML", "CSS", "ES6", "JavaScript"],
+    "source_code": "https://github.com/TK-ed/Guess-What",
+    "demo": "https://guesswhamt.netlify.app/"
   }
 ]
