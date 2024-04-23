@@ -1,5 +1,3 @@
-import { pdfjs, Document, Page, PDFDownloadLink } from 'react-pdf'
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
 import { SiExpress, SiMongodb, SiFastapi, SiTailwindcss, SiNextdotjs, SiTypescript, SiJavascript, SiDocker } from 'react-icons/si'

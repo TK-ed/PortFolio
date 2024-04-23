@@ -16,12 +16,12 @@
   },
   {
     "id": 2,
-    "name": "Github-scraping",
-    "image": "scraping.png",
-    "description": "A backend service which scrapes the github details of the given user.",
-    "tags": ["FastAPI", "python", "BeautifulSoup4", "Cyclic"],
-    "source_code": "https://github.com/TK-ed/github-scrape",
-    "demo": "https://tk-ed.cyclic.app"
+    "name": "Portfolyo",
+    "image": "portfolio.png",
+    "description": "A fully responsive modern portfolio created using framer-motion and Next-14.",
+    "tags": ["Next.js", "TailwindCSS", "TypseScript", "Framer-Motion"],
+    "source_code": "https://github.com/TK-ed/potfolyo-task",
+    "demo": "https://portofolyo-task.vercel.app/"
   },
   {
     "id": 3,
@@ -42,6 +42,15 @@
   },
   {
     "id": 5,
+    "name": "Github-scraping",
+    "image": "scraping.png",
+    "description": "A backend service which scrapes the github details of the given user.",
+    "tags": ["FastAPI", "python", "BeautifulSoup4", "Cyclic"],
+    "source_code": "https://github.com/TK-ed/github-scrape",
+    "demo": "https://tk-ed.cyclic.app"
+  },
+  {
+    "id": 6,
     "name": "Todo-List",
     "image": "next.png",
     "description": "Creative Todo List using Next.js",
@@ -49,15 +58,15 @@
     "source_code": "https://github.com/TK-ed/todo_next"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Doctor Appointment System",
-    "image": "portfolio.png",
+    "image": "sih.png",
     "description": "Project which was portrayed for Smart India Hackathon - 2023",
     "tags": ["Node.js", "Express.js", "Bcrypt", "MongoDB"],
     "source_code": "https://github.com/TK-ed/sih-23-backend"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "jeSUS",
     "image": "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg",
     "description": "A clever and entertaining bot created by utilizing the discord.js module.",
@@ -66,12 +75,20 @@
     "demo": "https://discord.com/channels/@Tharun#7991"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Guess-What",
     "image": "GuessWhat.png",
     "description": "A Fun and Simple Guessing Game made using HTML, CSS and Javascript (ES6).",
     "tags": ["HTML", "CSS", "ES6", "JavaScript"],
     "source_code": "https://github.com/TK-ed/Guess-What",
     "demo": "https://guesswhamt.netlify.app/"
+  },
+  {
+    "id": 10,
+    "name": "PayEasy",
+    "image": "payeasy.webp",
+    "description": "A simple API utilizing the payment gateway RazorPay.",
+    "tags": ["FastAPI", "RazorpayAPI", "python"],
+    "source_code": "https://github.com/TK-ed/Razorpay-integration"
   }
 ]
