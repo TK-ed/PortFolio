@@ -7,8 +7,8 @@ export default function HomePage() {
     <>
       <div className={styles.container}>
         <div className={styles.background}>
-          <h1>Web</h1>
-          <h1>Developer</h1>
+          <h1>I am</h1>
+          <h1>Batman</h1>
         </div>
         <div className={styles.foreground}>
           <div className={styles.content}>
