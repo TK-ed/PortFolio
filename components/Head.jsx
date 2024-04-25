@@ -17,8 +17,8 @@ const CustomHead = ({ title }) => {
         property="og:description"
         content="TK-ed Portfolio"
       />
-      <meta property="og:image" content="https://imgur.com/YTNNknY.png" />
-      <meta property="og:url" content="justtk.vercel.app" />
+      <meta property="og:image" content="/home.png" />
+      <meta property="og:url" content="tk-ed.vercel.app" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );

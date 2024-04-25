@@ -61,13 +61,6 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
             )}
           </div>
           <div>
-            {user.followers ? (
-              <h3>{user.followers} followers</h3>
-            ) : (
-              <h3>...</h3>
-            )}
-          </div>
-          <div>
             {totalCommits ? <h3>{totalCommits} commits</h3> : <h3>...</h3>}
           </div>
         </div>
@@ -180,7 +173,12 @@ export async function getStaticProps() {
   console.log(filteredRepos);
 
   return {
-    props: { user, totalCommits, favRepos: [...pinnedRepos, ...filteredRepos] },
+    props: {
+      user,
+      totalCommits,
+      favRepos: [...pinnedRepos, ...filteredRepos],
+      title: "GitHub",
+    },
     revalidate: 10,
   };
 }

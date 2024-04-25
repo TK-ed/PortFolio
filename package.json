@@ -10,7 +10,7 @@
     "build": "next build && next export",
     "start": "next start",
     "prepare": "husky",
-    "lint-staged": "lint-staged",
+    "lint-staged": "next lint",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -25,11 +25,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-github-calendar": "^3.2.2",
+    "react-icon-cloud": "^4.1.4",
     "react-icons": "^4.8.0",
     "react-pdf": "^5.7.2",
     "react-toastify": "^9.1.3",
+    "simple-icons": "^11.13.0",
     "terser": "^5.30.4",
-    "terser-webpack-plugin": "^5.3.10"
+    "terser-webpack-plugin": "^5.3.10",
+    "uuid": "^9.0.1",
+    "vercel": "^34.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -43,6 +47,7 @@
     "graphql-tag": "^2.12.6",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "tailwindcss": "^3.4.3",
     "typewriter-effect": "^2.19.0"
   },
   "lint-staged": {
