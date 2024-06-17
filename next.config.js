@@ -1,6 +1,5 @@
 module.exports = {
   images: {
-    unoptimized: false,
     domains: [
       "assets-global.website-files.com",
       "avatars.githubusercontent.com",
