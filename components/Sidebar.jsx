@@ -1,26 +1,26 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import FilesIcon from './icons/FilesIcon';
-import GithubIcon from './icons/GithubIcon';
-import CodeIcon from './icons/CodeIcon';
-import PencilIcon from './icons/PencilIcon';
-import MailIcon from './icons/MailIcon';
-import AccountIcon from './icons/AccountIcon';
-import SettingsIcon from './icons/SettingsIcon';
-import styles from '../styles/Sidebar.module.css';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import FilesIcon from "./icons/FilesIcon";
+import GithubIcon from "./icons/GithubIcon";
+import CodeIcon from "./icons/CodeIcon";
+import PencilIcon from "./icons/PencilIcon";
+import MailIcon from "./icons/MailIcon";
+import AccountIcon from "./icons/AccountIcon";
+import SettingsIcon from "./icons/SettingsIcon";
+import styles from "../styles/Sidebar.module.css";
 
 const sidebarTopItems = [
   {
     Icon: FilesIcon,
-    path: '/',
+    path: "/",
   },
   {
     Icon: GithubIcon,
-    path: '/github',
+    path: "/github",
   },
   {
     Icon: CodeIcon,
-    path: '/projects',
+    path: "/projects",
   },
   // {
   //   Icon: PencilIcon,
@@ -28,18 +28,18 @@ const sidebarTopItems = [
   // },
   {
     Icon: MailIcon,
-    path: '/contact',
+    path: "/contact",
   },
 ];
 
 const sidebarBottomItems = [
   {
     Icon: AccountIcon,
-    path: '/about',
+    path: "/about",
   },
   {
     Icon: SettingsIcon,
-    path: '/settings',
+    path: "/settings",
   },
 ];
 
@@ -59,8 +59,8 @@ const Sidebar = () => {
               <Icon
                 fill={
                   router.pathname === path
-                    ? 'rgb(225, 228, 232)'
-                    : 'rgb(106, 115, 125)'
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
                 }
                 className={styles.icon}
               />
@@ -70,13 +70,13 @@ const Sidebar = () => {
       </div>
       <div className={styles.sidebarBottom}>
         {sidebarBottomItems.map(({ Icon, path }) => (
-          <div className={styles.iconContainer}>
+          <div key={path} className={styles.iconContainer}>
             <Link href={path} key={path}>
               <Icon
                 fill={
                   router.pathname === path
-                    ? 'rgb(225, 228, 232)'
-                    : 'rgb(106, 115, 125)'
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
                 }
                 className={styles.icon}
               />

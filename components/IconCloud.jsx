@@ -9,7 +9,7 @@ const DynamicIconCloud = () => {
       fetchSimpleIcons({ slugs }).then(({ simpleIcons }) =>
         setIcons(Object.values(simpleIcons))
       );
-    }, []);
+    }, [slugs]);
 
     if (icons) {
       return icons.map((icon) =>
@@ -68,10 +68,9 @@ const DynamicIconCloud = () => {
           alignItems: "center",
           marginLeft: Const.pad * 2,
           marginRight: Const.pad * 2,
-          marginTop: Const.pad * 2
+          marginTop: Const.pad * 2,
         },
       }}
-
       options={{
         reverse: true,
         depth: 1,
