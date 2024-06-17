@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "dE-Vote",
-    "image": "evote.png",
+    "image": "/evote.svg",
     "description": "A Blockchain-based decentralised voting system built on Ethereum!!",
     "tags": [
       "React",
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "name": "Portfolyo",
-    "image": "portfolio.png",
+    "image": "/portfolio.svg",
     "description": "A fully responsive modern portfolio created using framer-motion and Next-14.",
     "tags": ["Next.js", "TailwindCSS", "TypseScript", "Framer-Motion"],
     "source_code": "https://github.com/TK-ed/potfolyo-task",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Sync.Sphere",
-    "image": "next-sync.png",
+    "image": "/next-sync.svg",
     "description": "It offers a seamlessly integrated platform, leveraging Supabase for cloud-based file storage.",
     "tags": ["Next.js", "TailwindCSS", "TypseScript", "Shadcn/UI", "Supabase"],
     "source_code": "https://github.com/TK-ed/sync-sphere",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name": "Comment Analysis",
-    "image": "comment_analysis.png",
+    "image": "/comment_analysis.svg",
     "description": "An application which analyzes the emotion of the given comment",
     "tags": ["FastAPI", "TypseScript", "React", "Node.js"],
     "source_code": "https://github.com/TK-ed/comment-analysis-react"
@@ -43,7 +43,7 @@
   {
     "id": 5,
     "name": "Github-scraping",
-    "image": "scraping.png",
+    "image": "/scraping.svg",
     "description": "A backend service which scrapes the github details of the given user.",
     "tags": ["FastAPI", "python", "BeautifulSoup4", "Cyclic"],
     "source_code": "https://github.com/TK-ed/github-scrape",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Todo-List",
-    "image": "next.png",
+    "image": "/next.svg",
     "description": "Creative Todo List using Next.js",
     "tags": ["Next.js", "TailwindCSS", "TypseScript", "DaisyUI"],
     "source_code": "https://github.com/TK-ed/todo_next"
@@ -60,7 +60,7 @@
   {
     "id": 7,
     "name": "Doctor Appointment System",
-    "image": "sih.png",
+    "image": "/sih.svg",
     "description": "Project which was portrayed for Smart India Hackathon - 2023",
     "tags": ["Node.js", "Express.js", "Bcrypt", "MongoDB"],
     "source_code": "https://github.com/TK-ed/sih-23-backend"
@@ -77,7 +77,7 @@
   {
     "id": 9,
     "name": "Guess-What",
-    "image": "GuessWhat.png",
+    "image": "/GuessWhat.svg",
     "description": "A Fun and Simple Guessing Game made using HTML, CSS and Javascript (ES6).",
     "tags": ["HTML", "CSS", "ES6", "JavaScript"],
     "source_code": "https://github.com/TK-ed/Guess-What",
@@ -86,7 +86,7 @@
   {
     "id": 10,
     "name": "PayEasy",
-    "image": "payeasy.webp",
+    "image": "/payeasy.svg",
     "description": "A simple API utilizing the payment gateway RazorPay.",
     "tags": ["FastAPI", "RazorpayAPI", "python"],
     "source_code": "https://github.com/TK-ed/Razorpay-integration"

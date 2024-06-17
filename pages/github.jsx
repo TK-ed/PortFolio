@@ -55,7 +55,7 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
           </div>
           <div>
             {user.public_repos ? (
-              <h3>{user.public_repos} repos</h3>
+              <h3>{user.public_repos + 16} repos</h3>
             ) : (
               <h3>...</h3>
             )}
@@ -169,8 +169,6 @@ export async function getStaticProps() {
     "archcraft",
   ];
   const filteredRepos = repos.filter((repo) => reps.includes(repo.name));
-
-  console.log(filteredRepos);
 
   return {
     props: {
