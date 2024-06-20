@@ -16,8 +16,8 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
-import DynamicIconCloud from "../components/IconCloud";
-import { Content } from "../components/Content";
+import IconCloud from "../components/icon-cloud";
+import { slugs } from "../components/slugs";
 const myResume = "./TK-ed.pdf";
 
 export default function AboutPage() {
@@ -138,13 +138,39 @@ export default function AboutPage() {
           </ul>
         </div>
         <br />
-        <h3>Tools:</h3><br />
+        <h3>Tools:</h3>
+        <br />
         <ul>
-          <li><span><SiVercel /> </span>Vercel</li>
-          <li><span><SiGit /> </span>GIT</li>
-          <li><span><SiVisualstudiocode /> </span>Vs-code</li>
-          <li><span><SiPostman /> </span>Postman</li>
-          <li><span><SiDocker /> </span>Docker</li>
+          <li>
+            <span>
+              <SiVercel />{" "}
+            </span>
+            Vercel
+          </li>
+          <li>
+            <span>
+              <SiGit />{" "}
+            </span>
+            GIT
+          </li>
+          <li>
+            <span>
+              <SiVisualstudiocode />{" "}
+            </span>
+            Vs-code
+          </li>
+          <li>
+            <span>
+              <SiPostman />{" "}
+            </span>
+            Postman
+          </li>
+          <li>
+            <span>
+              <SiDocker />{" "}
+            </span>
+            Docker
+          </li>
         </ul>
         <br />
         <h3 className="mt-8 text-xl font-bold text-center">
@@ -158,9 +184,9 @@ export default function AboutPage() {
           </a>
           )
         </h3>
-        <Content>
-          <DynamicIconCloud />
-        </Content>
+        <div className="relative flex h-full w-full max-w-[25rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+          <IconCloud iconSlugs={slugs} />
+        </div>
       </div>
     </>
   );
