@@ -27,6 +27,7 @@
   line-height: 1.1;
   color: var(--bg-text);
   position: absolute;
+  opacity: 0;
   z-index: 1;
 }
 
@@ -43,6 +44,7 @@
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  opacity: 0;
 }
 
 .bio {
