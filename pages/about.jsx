@@ -43,9 +43,9 @@ export default function AboutPage() {
         <li>
           <span role="img" aria-label="graduate-hat">
             🎓
-          </span>
-          The experience includes problem solving and testing, working in teams
-          with strict deadlines, for projects developed in the Trybe course.
+          </span>{" "}
+          I'm currently working as a Full-stack Intern building performant
+          applications using Next.js and Express using Typescript
         </li>
         <li>
           <span role="img" aria-label="laptop">

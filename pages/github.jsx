@@ -104,6 +104,7 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
     </>
   );
 };
+
 export async function getStaticProps() {
   const auth = process.env.GITHUB_API; // Ensure this is only used server-side if sensitive
   const octokit = new Octokit({ auth });
