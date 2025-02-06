@@ -51,7 +51,7 @@ export default function AboutPage() {
           <span role="img" aria-label="laptop">
             💻
           </span>{" "}
-          Learning about Salesforce, mainly Marketing Cloud
+          Learning about Salesforce, mainly Marketing Cloud{" "}
           <span>
             <FaSalesforce />
           </span>{" "}
