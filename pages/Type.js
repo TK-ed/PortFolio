@@ -7,9 +7,11 @@ function Type() {
       options={{
         strings: [
           "Polyglot Developer",
+          "Software Engineer",
           "Web3 Enthusiast",
           "Open-Source contributor",
-          "Full-Stack Developer",          
+          "Full-Stack Developer", 
+          "Marketing Cloud Developer"      
         ],
         autoStart: true,
         typeSpeed: 10,
