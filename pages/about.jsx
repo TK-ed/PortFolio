@@ -31,8 +31,7 @@ export default function AboutPage() {
           <span role="img" aria-label="book">
             📖
           </span>{" "}
-          I am Tharun Kumar, dedicated backend developer that is also skilled in
-          creating the user interface for web applications.
+          I am Tharun Kumar, versatile Polyglot Developer who loves working on new technologies.
         </li>
         <li>
           <span role="img" aria-label="light-bulb">
