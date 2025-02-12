@@ -15,6 +15,8 @@ export const slugs = [
   "graphql",
   "fastapi",
   "javascript",
+  "salesforce",
+  "archlinux",
   "html5",
   "css3",
   "linux",
