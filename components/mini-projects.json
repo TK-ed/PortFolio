@@ -1,0 +1,99 @@
+[
+	{
+		"id": 1,
+		"name": "Lore",
+		"image": "/lore.svg",
+		"description": "An AI-powered second brain that connects code, documents, and workflows to provide contextual answers with citations.",
+		"tags": [
+			"Next.js",
+			"FastAPI",
+			"Python",
+			"PostgreSQL",
+			"Qdrant",
+			"Neo4j",
+			"LLM",
+			"RAG"
+		],
+		"source_code": "https://github.com/TK-ed/lore"
+	},
+	{
+		"id": 2,
+		"name": "StreamForge",
+		"image": "/streamforge.svg",
+		"description": "A scalable video streaming platform with media processing, real-time communication, and cloud-native architecture.",
+		"tags": ["FastAPI", "FFmpeg", "Redis", "RabbitMQ", "Docker", "WebSockets"],
+		"source_code": "https://github.com/TK-ed/streamforge"
+	},
+	{
+		"id": 3,
+		"name": "Sherlog",
+		"image": "/sherlog.svg",
+		"description": "An AI-powered log intelligence platform that analyzes application logs, detects anomalies, and helps debug production issues.",
+		"tags": ["Python", "FastAPI", "AI", "Docker", "Observability"],
+		"source_code": "https://github.com/TK-ed/sherlog"
+	},
+	{
+		"id": 4,
+		"name": "Fronvo",
+		"image": "/fronvo.svg",
+		"description": "A full-stack platform built with modern web technologies focusing on scalable architecture and user experience.",
+		"tags": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
+		"source_code": "https://github.com/TK-ed/fronvo"
+	},
+	{
+		"id": 5,
+		"name": "dE-Vote",
+		"image": "/evote.svg",
+		"description": "A blockchain-based decentralised voting system built on Ethereum.",
+		"tags": [
+			"React",
+			"Express.js",
+			"Truffle",
+			"MongoDB",
+			"Node.js",
+			"Solidity"
+		],
+		"source_code": "https://github.com/TK-ed/de-Vote"
+	},
+	{
+		"id": 6,
+		"name": "Portfolyo",
+		"image": "/portfolio.svg",
+		"description": "A responsive modern portfolio created using Framer Motion and Next.js.",
+		"tags": ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+		"source_code": "https://github.com/TK-ed/potfolyo-task",
+		"demo": "https://portofolyo-task.vercel.app/"
+	},
+	{
+		"id": 7,
+		"name": "Sync.Sphere",
+		"image": "/next-sync.svg",
+		"description": "A cloud-based file management platform leveraging Supabase for storage and authentication.",
+		"tags": ["Next.js", "TailwindCSS", "TypeScript", "Shadcn/UI", "Supabase"],
+		"source_code": "https://github.com/TK-ed/sync-sphere"
+	},
+	{
+		"id": 8,
+		"name": "Comment Analysis",
+		"image": "/comment_analysis.svg",
+		"description": "An application that analyzes sentiment and emotion from user comments.",
+		"tags": ["FastAPI", "React", "TypeScript", "Node.js"],
+		"source_code": "https://github.com/TK-ed/comment-analysis-react"
+	},
+	{
+		"id": 9,
+		"name": "Github Scraping",
+		"image": "/scraping.svg",
+		"description": "A backend service that extracts GitHub user information and repository details.",
+		"tags": ["FastAPI", "Python", "BeautifulSoup4"],
+		"source_code": "https://github.com/TK-ed/github-scrape"
+	},
+	{
+		"id": 10,
+		"name": "Doctor Appointment System",
+		"image": "/sih.svg",
+		"description": "A healthcare appointment management system developed for Smart India Hackathon 2023.",
+		"tags": ["Node.js", "Express.js", "MongoDB", "Bcrypt"],
+		"source_code": "https://github.com/TK-ed/sih-23-backend"
+	}
+]

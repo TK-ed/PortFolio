@@ -126,7 +126,6 @@ export async function getStaticProps() {
 			favRepos: repos,
 			title: "GitHub",
 		},
-		revalidate: 3600,
 	};
 }
 

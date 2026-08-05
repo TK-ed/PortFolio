@@ -1,6 +1,10 @@
+import data from "../components/mini-projects.json";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/ProjectsPage.module.css";
-import { getProjects } from "./api/mini-projects";
+
+const getProjects = () => {
+	return data;
+};
 
 const ProjectsPage = ({ pypi_projects }) => {
 	return (
