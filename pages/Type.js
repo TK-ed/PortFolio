@@ -2,24 +2,24 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 function Type() {
-  return (
-    <Typewriter
-      options={{
-        strings: [
-          "Polyglot Developer",
-          "Software Engineer",
-          "Web3 Enthusiast",
-          "Open-Source contributor",
-          "Full-Stack Developer", 
-          "Marketing Cloud Developer"      
-        ],
-        autoStart: true,
-        typeSpeed: 10,
-        loop: true,
-        deleteSpeed: 69,
-      }}
-    />
-  );
+	return (
+		<Typewriter
+			options={{
+				strings: [
+					"Polyglot Developer",
+					"Software Engineer",
+					"Web3 Enthusiast",
+					"Open-Source contributor",
+					"Full-Stack Developer",
+					"Marketing Cloud Developer",
+				],
+				autoStart: true,
+				typeSpeed: 10,
+				loop: true,
+				deleteSpeed: 69,
+			}}
+		/>
+	);
 }
 
 export default Type;
