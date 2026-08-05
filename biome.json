@@ -1,0 +1,53 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.7/schema.json",
+	"files": {
+		"includes": ["**", "!node_modules", "!.next", "!out", "!eslint.config.mjs"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "recommended",
+			"a11y": {
+				"noSvgWithoutTitle": "off",
+				"useButtonType": "off"
+			},
+			"complexity": {
+				"noImportantStyles": "off",
+				"noUselessFragments": "off"
+			},
+			"correctness": {
+				"noUnusedImports": "off",
+				"noUnusedVariables": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noAssignInExpressions": "off"
+			},
+			"style": {
+				"noDescendingSpecificity": "off",
+				"useNodejsImportProtocol": "off"
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.css"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noUnknownAtRules": "off"
+					}
+				}
+			}
+		}
+	],
+	"css": {
+		"parser": {
+			"cssModules": true
+		}
+	}
+}
