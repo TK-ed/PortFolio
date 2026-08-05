@@ -1,198 +1,229 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt, FaReact } from "react-icons/fa";
 import {
-  SiExpress,
-  SiMongodb,
   SiFastapi,
-  SiTailwindcss,
   SiNextdotjs,
   SiTypescript,
   SiJavascript,
+  SiTailwindcss,
+  SiPostgresql,
+  SiMongodb,
   SiDocker,
-  SiPostman,
   SiGit,
+  SiGithubactions,
   SiVercel,
-  SiVisualstudiocode,
+  SiZedindustries,
+  SiPostman,
+  SiPython,
+  SiRedis,
+  SiExpress,
 } from "react-icons/si";
-import { FaSalesforce } from "react-icons/fa";
-import { FaBoltLightning } from "react-icons/fa6";
 import { IoLogoNodejs } from "react-icons/io";
+
 import IconCloud from "../components/icon-cloud";
 import { slugs } from "../components/slugs";
+
 const myResume = "./TK-ed.pdf";
 
 export default function AboutPage() {
   return (
-    <>
-      <h3>About Me</h3>
+    <div className="about-page">
+
+      <h3 className="!text-base sm:!text-xl md:!text-2xl font-semibold">
+        About Me
+      </h3>
+
       <br />
-      <ul>
+
+      <ul className="space-y-2 !text-sm sm:!text-base">
         <li>
-          <span role="img" aria-label="book">
-            📖
-          </span>{" "}
-          I am Tharun Kumar, versatile Polyglot Developer who loves working on new technologies.
+          👋 I’m Tharun Kumar, a Software Engineer passionate about building
+          scalable systems, AI-powered applications, and developer-focused
+          tools.
         </li>
+
         <li>
-          <span role="img" aria-label="light-bulb">
-            💡
-          </span>{" "}
-          My focus is on helping to improve people’s lives by developing
-          applications that are accessible and functional.
+          🧠 Building <b>Lore</b> — an AI knowledge and memory platform that
+          helps teams capture, understand, and leverage their collective
+          knowledge.
         </li>
+
         <li>
-          <span role="img" aria-label="graduate-hat">
-            🎓
-          </span>{" "}
-          I'm currently working as a Consultant Software Engineer @ Merck KGaA
+          🔍 Building <b>Sherlog</b> — an intelligent observability tool that
+          analyzes logs, detects anomalies, and helps engineers investigate
+          incidents faster.
         </li>
+
         <li>
-          <span role="img" aria-label="laptop">
-            💻
-          </span>{" "}
-          Learning about Salesforce, mainly Marketing Cloud{" "}
-          <span>
-            <FaSalesforce />
-          </span>{" "}
-          and enhancing development skills through trailhead!!{" "}
-          <span>
-            <FaBoltLightning />
-          </span>{" "}
+          💻 I work with Python, TypeScript, Next.js, FastAPI, cloud-native
+          technologies, and open-source tools while continuously exploring
+          better ways to build software.
         </li>
       </ul>
+
       <br />
-      <h2>Relevant skills:</h2>
-      <div className="flex flex-row w-full space-y-12">
+
+      <h2 className="!text-sm sm:!text-lg md:!text-xl font-semibold">
+        Relevant skills:
+      </h2>
+
+
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 items-center mt-6">
+
+        {/* Skills */}
         <div>
-          <h3>Front-end:</h3>
-          <br />
-          <ul>
-            <li>
-              <span>
-                <AiFillHtml5 />
-              </span>
-              HTML
-            </li>
-            <li>
-              <span>
-                <FaCss3Alt />{" "}
-              </span>
-              CSS
-            </li>
-            <li>
-              <span>
-                <FaReact />/<SiNextdotjs />{" "}
-              </span>
-              React.js/Next.js
-            </li>
-            <li>
-              <span>
-                <SiTypescript />/<SiJavascript />
-              </span>{" "}
-              TypeScript/JavaScript
-            </li>
-            <li>
-              <span>
-                <SiTailwindcss />{" "}
-              </span>
-              TailwindCSS
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+
+            {/* Frontend */}
+            <div>
+              <h3 className="!text-sm sm:!text-base font-semibold mb-2">
+                Front-end:
+              </h3>
+
+              <ul className="space-y-1 !text-sm">
+                <li className="flex items-center gap-2">
+                  <AiFillHtml5 /> HTML
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <FaCss3Alt /> CSS
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <FaReact /> <SiNextdotjs /> React / Next.js
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiTypescript /> TypeScript
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiTailwindcss /> Tailwind CSS
+                </li>
+              </ul>
+            </div>
+
+
+            {/* Backend */}
+            <div>
+              <h3 className="!text-sm sm:!text-base font-semibold mb-2">
+                Back-end:
+              </h3>
+
+              <ul className="space-y-1 !text-sm">
+                <li className="flex items-center gap-2">
+                  <SiFastapi /> FastAPI
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <IoLogoNodejs /> Node.js
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiExpress /> Express
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiPostgresql /> PostgreSQL
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiMongodb /> MongoDB
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiDocker /> Docker
+                </li>
+              </ul>
+            </div>
+
+
+            {/* Tools */}
+            <div>
+              <h3 className="!text-sm sm:!text-base font-semibold mb-2">
+                Tools:
+              </h3>
+
+              <ul className="space-y-1 !text-sm">
+                <li className="flex items-center gap-2">
+                  <SiGit /> Git
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiGithubactions /> GitHub Actions
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiVercel /> Vercel
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiZedindustries /> Zed
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <SiPostman /> Postman
+                </li>
+              </ul>
+            </div>
+
+
+            {/* AI */}
+            <div>
+              <h3 className="!text-sm sm:!text-base font-semibold mb-2">
+                AI:
+              </h3>
+
+              <ul className="space-y-1 !text-sm">
+                <li>🐍 Python</li>
+                <li>🦙 Ollama</li>
+                <li>🧠 LangChain</li>
+                <li>🔎 Qdrant</li>
+                <li>🕸 Neo4j</li>
+                <li>⚡ MCP</li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div className="mt-8">
+            <h3 className="!text-sm sm:!text-base font-semibold">
+              Resume (
+              <a
+                href={myResume}
+                download="Resume-TK-ed.pdf"
+                className="text-blue-500 hover:underline"
+              >
+                Download
+              </a>
+              )
+            </h3>
+          </div>
+
         </div>
-        <br />
-        <div>
-          <h3>Back-end:</h3>
-          <br />
-          <ul>
-            <li>
-              <span>
-                <SiFastapi />{" "}
-              </span>
-              FastAPI
-            </li>
-            <li>
-              <span>
-                <SiExpress />{" "}
-              </span>
-              Express.js
-            </li>
-            <li>
-              <span>
-                <IoLogoNodejs />{" "}
-              </span>
-              Node.js
-            </li>
-            <li>
-              <span>
-                <SiMongodb />{" "}
-              </span>
-              MongoDB
-            </li>
-            <li>
-              <span>
-                <SiDocker />{" "}
-              </span>
-              Docker
-            </li>
-          </ul>
+
+
+        {/* Cloud */}
+        <div className="flex justify-center mt-8 lg:mt-0">
+          <div className="w-[250px] sm:w-[320px] lg:w-[420px]">
+            <IconCloud iconSlugs={slugs} />
+          </div>
         </div>
-        <br />
-        <h3>Tools:</h3>
-        <br />
-        <ul>
-          <li>
-            <span>
-              <SiVercel />{" "}
-            </span>
-            Vercel
-          </li>
-          <li>
-            <span>
-              <SiGit />{" "}
-            </span>
-            GIT
-          </li>
-          <li>
-            <span>
-              <SiVisualstudiocode />{" "}
-            </span>
-            Vs-code
-          </li>
-          <li>
-            <span>
-              <SiPostman />{" "}
-            </span>
-            Postman
-          </li>
-          <li>
-            <span>
-              <SiDocker />{" "}
-            </span>
-            Docker
-          </li>
-        </ul>
-        <br />
-        <h3 className="mt-8 text-xl font-bold text-center">
-          Resume (
-          <a
-            href={myResume}
-            download="Resume-TK-ed.pdf"
-            className="text-blue-500 hover:underline"
-          >
-            Download
-          </a>
-          )
-        </h3>
-        <div className="relative flex h-full w-full max-w-[25rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
-          <IconCloud iconSlugs={slugs} />
-        </div>
+
+
       </div>
-    </>
+
+    </div>
   );
 }
 
+
 export async function getStaticProps() {
   return {
-    props: { title: "About" },
+    props: {
+      title: "About",
+    },
   };
 }

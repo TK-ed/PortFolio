@@ -37,4 +37,11 @@ export const slugs = [
   "zustand",
   "amazonaws",
   "greensock",
+  "grafana",
+  "prometheus",
+  "opentelemetry",
+  "redis",
+  "rabbitmq",
+  "qdrant",
+  "neo4j",
 ];
