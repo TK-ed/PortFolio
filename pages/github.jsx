@@ -1,11 +1,21 @@
-import { request as req } from "@octokit/request";
 import Image from "next/image";
 import { Octokit } from "octokit";
 import GitHubCalendar from "react-github-calendar";
 import RepoCard from "../components/RepoCard";
 import styles from "../styles/GithubPage.module.css";
 
-const GithubPage = ({ user, totalCommits, favRepos }) => {
+const REPOSITORIES = [
+	"lore",
+	"sherlog",
+	"streamforge",
+	"portfolio",
+	"portfolio-framer-motion",
+	"de-Vote",
+	"archcraft",
+	"bun",
+];
+
+const GithubPage = ({ user, favRepos }) => {
 	const theme = {
 		level0: "#161B22",
 		level1: "#0e4429",
@@ -13,37 +23,13 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
 		level3: "#26a641",
 		level4: "#39d353",
 	};
-	const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
-	const GITHUB_API = process.env.GITHUB_API;
-
-	const octokit = new Octokit({
-		auth: GITHUB_API,
-	});
-
-	const _fetchGithub = async () => {
-		const result = {
-			totalRepos: 0,
-			totalStars: 0,
-			totalCommits: 0,
-		};
-
-		console.log("Fetching Github Stats");
-
-		const { data } = await octokit.request(
-			`GET /users/${GITHUB_USERNAME}/repos?per_page=300`,
-		);
-		const repos = data;
-		result.totalRepos += repos.length;
-
-		console.log("Github Stats fetched successfully");
-	};
 
 	return (
 		<>
 			<a
 				href="https://github.com/TK-ed"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				className={styles.no_color}
 			>
 				<div className={styles.user}>
@@ -57,30 +43,21 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
 						/>
 						<h3 className={styles.username}>{user.login}</h3>
 					</div>
+
 					<div>
-						{user.public_repos ? (
-							<h3>{user.public_repos + 16} repos</h3>
-						) : (
-							<h3>...</h3>
-						)}
-					</div>
-					<div>
-						{totalCommits ? <h3>{totalCommits} commits</h3> : <h3>...</h3>}
+						<h3>{user.public_repos} repos</h3>
 					</div>
 				</div>
 			</a>
-			<div>
-				{" "}
-				<center>
-					<h3>My Most Popular Repositories on Github</h3>
-				</center>
-			</div>
+
 			<div className={styles.container}>
 				{favRepos.map((repo) => (
 					<RepoCard key={repo.id} repo={repo} />
 				))}
 			</div>
+
 			<br />
+
 			<hr
 				style={{
 					width: "80%",
@@ -88,13 +65,17 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
 					marginLeft: "9%",
 				}}
 			/>
+
 			<br />
-			<div>
+
+			<div className="my-2">
 				<center>
-					<h3>My Github Calendar</h3>
+					<h3>My Github Contributions</h3>
 				</center>
 			</div>
+
 			<br />
+
 			<center>
 				<div className={styles.contributions}>
 					<GitHubCalendar
@@ -102,6 +83,9 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
 						theme={theme}
 						hideColorLegend
 						hideMonthLabels
+						blockSize={10}
+						blockMargin={3}
+						fontSize={12}
 					/>
 				</div>
 			</center>
@@ -110,79 +94,39 @@ const GithubPage = ({ user, totalCommits, favRepos }) => {
 };
 
 export async function getStaticProps() {
-	const auth = process.env.GITHUB_API; // Ensure this is only used server-side if sensitive
-	const octokit = new Octokit({ auth });
+	const username = "TK-ed";
+	const auth = process.env.GITHUB_API;
 
-	const userRes = await fetch(`https://api.github.com/users/TK-ed`, {
-		headers: { Authorization: `token ${auth}` },
+	const octokit = new Octokit({
+		auth,
 	});
-	const user = await userRes.json();
 
-	const reposRes = await fetch(
-		`https://api.github.com/users/TK-ed/repos?per_page=1000`,
-		{ headers: { Authorization: `token ${auth}` } },
-	);
-	const repos = await reposRes.json();
+	const userResponse = await octokit.request("GET /users/{username}", {
+		username,
+	});
 
-	let totalCommits = 0;
-	for (const repo of repos) {
-		const commitsRes = await octokit.request(
-			`GET /repos/TK-ed/${repo.name}/commits`,
-			{
-				owner: "TK-ed",
-				repo: repo.name,
-			},
-		);
-		totalCommits += commitsRes.data.length; // Counting each commit
+	const repos = [];
+
+	for (const repoName of REPOSITORIES) {
+		try {
+			const response = await octokit.request("GET /repos/{owner}/{repo}", {
+				owner: username,
+				repo: repoName,
+			});
+
+			repos.push(response.data);
+		} catch (error) {
+			console.error(`Failed fetching ${repoName}`, error.message);
+		}
 	}
-
-	// Make a request to GitHub GraphQL API using the imported queryz
-	const GetPinnedRepos = `
-  query GetPinnedRepos {
-    user(login: "TK-ed") {
-      pinnedItems(first: 6, types: REPOSITORY) {
-        nodes {
-          ... on Repository {
-            name
-            description
-            url
-            stargazerCount
-            forkCount
-            homepageUrl
-          }
-        }
-      }
-    }
-  }
-`;
-
-	const pinnedResponse = await req("POST /graphql", {
-		headers: {
-			authorization: `token ${auth}`,
-			"content-type": "application/json",
-		},
-		query: GetPinnedRepos, // Use the imported query
-	});
-
-	// Extract the pinned repositories from the response
-	const pinnedRepos = pinnedResponse.data.data.user.pinnedItems.nodes;
-
-	const reps = [
-		"fronvo-server",
-		"awesome-interview-questions",
-		"CheatSheets",
-		"archcraft",
-	];
-	const filteredRepos = repos.filter((repo) => reps.includes(repo.name));
 
 	return {
 		props: {
-			user,
-			totalCommits,
-			favRepos: [...pinnedRepos, ...filteredRepos],
+			user: userResponse.data,
+			favRepos: repos,
 			title: "GitHub",
 		},
-		revalidate: 10,
+		revalidate: 3600,
 	};
 }
 
